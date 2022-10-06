@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-const INITIAL_GAME_STATE = ["X","X","O","","","","","","","",""]
+import Square from "./Square";
+
+const INITIAL_GAME_STATE = ["X","X","O","","","","","",""]
 
 function Game() {
     const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
@@ -12,7 +14,9 @@ function Game() {
             <div>
                 <div className="grid grid-cols-3 gap-3 mx-auto w-96">
                     {INITIAL_GAME_STATE.map((player, index) => (
-                        <div key={index} className="h-32 border-solid border-4 border-slate-200 font-display text-6xl text-center flex justify-center items-center cursor-pointer">{player}</div>
+                        <Square key={index}>
+                            {player}
+                        </Square>
                     ))}
                 </div>
                 <div>Scores Goes Here</div>
