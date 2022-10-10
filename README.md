@@ -1,6 +1,6 @@
 # React Tic-tac-toe
 
-[![](.img/ex.png)](https://warchalowski.pl/pro/curved-outside-sidebar/)
+[![](.img/ex.png)](https://kwarchalowski.github.io/react-tictactoe/)
 
 **React + Tailwind CSS + Vite** tic-tac-toe.
 
