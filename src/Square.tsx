@@ -6,18 +6,18 @@ type Props = {
 
 function Square({ index, onClick, player }: Props) {
     const scale = player ? "scale-100" : "scale-0"
-    const textColor = player === "X" ? "text-yellow-200" : "text-fuchsia-300"
-    const hoverStyle = "transition duration-500 hover:scale-105 transform"
+    const textColor = player === "X" ? "text-lime-400" : "text-sky-400"
+    const hoverStyle = "transition duration-700 hover:scale-110 transform"
 
     return(
         <div
         data-cell-index={index}
-        className={`h-32 border-solid border-4 border-slate-200 font-display text-6xl text-center flex justify-center items-center cursor-pointer ${hoverStyle}`}
+        className={`h-32 border-solid border-2 border-zinc-400 rounded font-display text-6xl text-center flex justify-center items-center cursor-pointer ${hoverStyle} bg-zinc-700 prevent-select`}
         {...{ onClick }}
         >
             <span
             data-cell-index={index}
-            className={`transform transition-all duration-150 ease-out ${scale} ${textColor}`}>{player}</span>
+            className={`transform transition-all duration-150 ease-out ${scale} ${textColor}`}>{player}</span> 
         </div>
     );
 }
