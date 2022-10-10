@@ -15,9 +15,6 @@ body {
   background-color: #111;
 }
 
-#root {
-  height: 100%;
-}
 
 .prevent-select {
   -webkit-user-select: none; /* Safari */
