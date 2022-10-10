@@ -6,7 +6,7 @@ type Props = {
 
 function Square({ index, onClick, player }: Props) {
     const scale = player ? "scale-100" : "scale-0"
-    const textColor = player === "X" ? "text-lime-400" : "text-sky-400"
+    const textColor = player === "🥦" ? "text-lime-400" : "text-sky-400"
     const hoverStyle = "transition duration-700 hover:scale-110 transform"
 
     return(

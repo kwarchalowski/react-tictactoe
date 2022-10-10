@@ -6,11 +6,11 @@ type Scores = {
 }
 
 /* player icons:
-    X: X
-    O: O */
+    X: 🥦
+    O: 🍅 */
 
 const INITIAL_GAME_STATE = ["","","","","","","","",""]
-const INITIAL_SCORES: Scores = { X: 0, O: 0};
+const INITIAL_SCORES: Scores = { "🥦": 0, "🍅": 0};
 const WINNING_COMBOS = [
     [0, 1, 2],
     [3, 4, 5],
@@ -24,7 +24,7 @@ const WINNING_COMBOS = [
 
 function Game() {
     const [gameState, setGameState] = useState(INITIAL_GAME_STATE);
-    const [currentPlayer, setCurrentPlayer] = useState("X");
+    const [currentPlayer, setCurrentPlayer] = useState("🥦");
     const [scores, setScores] = useState(INITIAL_SCORES);
 
     useEffect(() => {
@@ -110,7 +110,7 @@ function Game() {
     }
 
     const changePlayer = () => {
-        setCurrentPlayer(currentPlayer === "X" ? "O" : "X")
+        setCurrentPlayer(currentPlayer === "🥦" ? "🍅" : "🥦")
     }
 
     const handleCellClick = (event: any) => {
@@ -144,8 +144,8 @@ function Game() {
                 <div className="mx-auto w-96 text-2xl text-serif mt-6">
                     <p className="text-white mt-5">Next Player: <span>{currentPlayer}</span></p>
                     <hr className="m-4"/>
-                    <p className="text-white mt-5">Player X wins: <span>{scores["X"]}</span></p>
-                    <p className="text-white mt-5">Player O wins: <span>{scores["O"]}</span></p>
+                    <p className="text-white mt-5">Player 🥦 wins: <span>{scores["🥦"]}</span></p>
+                    <p className="text-white mt-5">Player 🍅 wins: <span>{scores["🍅"]}</span></p>
                 </div>
                 <div className="mx-auto w-96 mt-8">
                     <button className="bg-red-500 hover:bg-sky-200
