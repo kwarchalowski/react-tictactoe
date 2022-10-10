@@ -6,7 +6,7 @@
 
 Everyone needs a Tic-tac-toe in his portfolio, isn't that right?
 
-## You can see it for yourself right [:globe_with_meridians: HERE](https://warchalowski.pl/pro/react-tictactoe/)
+## You can see it for yourself right [:globe_with_meridians: HERE](https://kwarchalowski.github.io/react-tictactoe/)
 
 Browser's local storage used for keepin' a track of scores.
 
